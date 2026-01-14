@@ -203,3 +203,63 @@ footer{
   .projects{ grid-template-columns: 1fr; }
   .hero{ min-height: 82vh; }
 }
+
+
+/* ===== Case study blocks ===== */
+.card{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 18px 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+.meta-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.badge{
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.04);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  opacity: 0.92;
+}
+
+.screens{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.screen{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+}
+
+.screen img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px){
+  .meta-grid{ grid-template-columns: 1fr; }
+  .screens{ grid-template-columns: 1fr; }
+}
+
+
